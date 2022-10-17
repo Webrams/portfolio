@@ -72,7 +72,7 @@ body {
 }
 .me{
     
-    padding-top: 300px;
+    padding-top: 250px;
     margin-top: auto!important;
     text-align: center;
     
@@ -87,12 +87,46 @@ body {
 .me h1{
     color: white;
     font-size: xx-large;
-    margin: 10px;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
 }
 
-.me button{
+.me .specialText{
     
+    color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(
+    to right,
+        #ed8080 0%,
+        #2a77d6 16%,
+        #5eb524 32%,
+        #eacd25 48%,
+        #ed8080 64%,
+        #2a77d6 80%,
+        #5eb524 100%
+    );
+  
+    background-size: 300% 300%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #222;
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    animation: shimmer infinite 3s linear;
+}
+@keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+.me a{
+    position: absolute;
+    margin-top: 50px;
+    transform: translate(-50%);
     border: #fff solid 15px;
     border-radius: 3px;
     box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.6);
@@ -103,7 +137,7 @@ body {
     text-decoration: none;
     color: black;
 }
-.me button:hover{
+.me a:hover{
     transition-delay: 0.07s;
     color: rgb(255, 179, 0);
     transform: scale(1.1);
@@ -115,7 +149,7 @@ body {
 .home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(/img/ERBHERO.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6), rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(/img/ERBHERO.jpeg);
     
     background-attachment: fixed;
     background-position: center top;
@@ -201,7 +235,7 @@ body {
 }
 
 .navTrigger i {
-    background-color: #000;
+    background-color: #fff;
     border-radius: 2px;
     content: '';
     display: block;
@@ -393,6 +427,7 @@ body {
 .affix {
     padding: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
 }
 .myH2 {
 	text-align:center;
@@ -403,4 +438,57 @@ body {
 	.myP {
 		padding:2%;
 	}
+}
+.myself {
+    margin: 5px;
+    width: 80%;
+    transform: translate(13%);
+    box-shadow: 1px ;
+}
+.myself img{
+    width: 200px;
+    display: inline-block;
+    
+}
+.myself p{
+    font-size: 20px;
+    
+}
+.aboutText p{
+    text-align: justify;
+}
+#projects{
+    margin-top: 70px;
+    width: 60%;
+    transform: translate(30%);
+}
+.files{
+    transform: translate(15%);
+    width: 80%;
+}
+.row2{
+    transform: translate(10%);
+}
+#projects .button{
+    border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #dedede;
+}
+
+#skills{
+    width: 60%;
+    transform: translate(30%);
+    margin-top: 70px;
+    height: 70vh;
+}
+#skills h1{
+    text-align: center;
+    font-size: 4em;
 }
