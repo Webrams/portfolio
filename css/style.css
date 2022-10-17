@@ -138,9 +138,9 @@ body {
     color: black;
 }
 .me a:hover{
-    transition-delay: 0.07s;
+    
     color: rgb(255, 179, 0);
-    transform: scale(1.1);
+    scale: 1.1;
 }
 
 
@@ -463,11 +463,11 @@ body {
     transform: translate(30%);
 }
 .files{
-    transform: translate(15%);
+    transform: translate(33%);
     width: 80%;
 }
 .row2{
-    transform: translate(10%);
+    transform: translate(7%);
 }
 #projects .button{
     border: none;
@@ -489,6 +489,16 @@ body {
     height: 70vh;
 }
 #skills h1{
+    text-align: center;
+    font-size: 4em;
+}
+#experience{
+    width: 60%;
+    transform: translate(30%);
+    margin-top: 70px;
+    height: 70vh;
+}
+#experience h1{
     text-align: center;
     font-size: 4em;
 }
