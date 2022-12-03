@@ -434,11 +434,7 @@ body {
 	font-size: 4rem;
 }
 
-@media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
-}
+
 .myself {
     margin: 5px;
     width: 80%;
@@ -460,14 +456,14 @@ body {
 #projects{
     margin-top: 70px;
     width: 60%;
-    transform: translate(30%);
+    transform: translate(35%);
 }
 .files{
-    transform: translate(33%);
+    transform: translate(22.5%);
     width: 80%;
 }
 .row2{
-    transform: translate(7%);
+    transform: translate(9%);
 }
 #projects .button{
     border: none;
@@ -481,7 +477,11 @@ body {
   cursor: pointer;
   background-color: #dedede;
 }
-
+@media all and (max-width:700px){
+	.row2{
+        transform: translate(-0%);
+    }
+}
 #skills{
     width: 60%;
     transform: translate(30%);
