@@ -493,6 +493,23 @@ body {
     font-size: 4em;
 }
 
+.skills .progress-bars{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.skills .progress-bars .progress-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .progress-bars .progress-bar .pro-title{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.skills .progress-bars .progress-bar .html{
+    width: 80%;
+}
 #experience{
     width: 60%;
     transform: translate(30%);
